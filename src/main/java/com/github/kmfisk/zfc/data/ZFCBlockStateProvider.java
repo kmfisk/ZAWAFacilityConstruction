@@ -27,9 +27,9 @@ public class ZFCBlockStateProvider extends BlockStateProvider {
         blockSet(ZFCBlocks.MIXED_WHITE_STONE.get(), ZFCBlocks.MIXED_WHITE_STONE_SLAB.get(), ZFCBlocks.MIXED_WHITE_STONE_STAIRS.get(), ZFCBlocks.MIXED_WHITE_STONE_WALL.get());
         blockSet(ZFCBlocks.BIG_MIXED_WHITE_STONE.get(), ZFCBlocks.BIG_MIXED_WHITE_STONE_SLAB.get(), ZFCBlocks.BIG_MIXED_WHITE_STONE_STAIRS.get(), ZFCBlocks.BIG_MIXED_WHITE_STONE_WALL.get());
 
-        barsSet(ZFCBlocks.HEAVY_DUTY_BARS.get(), ZFCBlocks.HEAVY_DUTY_BARS_DOOR.get(), ZFCBlocks.HEAVY_DUTY_BARS_FENCE.get(), ZFCBlocks.HEAVY_DUTY_BARS_SLAB.get(), ZFCBlocks.HEAVY_DUTY_BARS_TRAPDOOR.get());
+        barsSet(ZFCBlocks.HEAVY_DUTY_BARS.get(), ZFCBlocks.HEAVY_DUTY_DOOR.get(), ZFCBlocks.HEAVY_DUTY_FENCE.get(), ZFCBlocks.HEAVY_DUTY_SLAB.get(), ZFCBlocks.HEAVY_DUTY_TRAPDOOR.get());
         barsSet(ZFCBlocks.VERTICAL_BARS.get(), ZFCBlocks.VERTICAL_BARS_DOOR.get(), ZFCBlocks.VERTICAL_BARS_FENCE.get(), ZFCBlocks.VERTICAL_BARS_SLAB.get(), ZFCBlocks.VERTICAL_BARS_TRAPDOOR.get());
-        barsSet(ZFCBlocks.CAST_IRON_BARS.get(), ZFCBlocks.CAST_IRON_BARS_DOOR.get(), ZFCBlocks.CAST_IRON_BARS_FENCE.get(), ZFCBlocks.CAST_IRON_BARS_SLAB.get(), ZFCBlocks.CAST_IRON_BARS_TRAPDOOR.get());
+        barsSet(ZFCBlocks.CAST_IRON_BARS.get(), ZFCBlocks.CAST_IRON_DOOR.get(), ZFCBlocks.CAST_IRON_FENCE.get(), ZFCBlocks.CAST_IRON_SLAB.get(), ZFCBlocks.CAST_IRON_TRAPDOOR.get());
     }
 
     public void blockSet(Block block, SlabBlock slabBlock, StairsBlock stairsBlock, WallBlock wallBlock) {
@@ -37,6 +37,7 @@ public class ZFCBlockStateProvider extends BlockStateProvider {
         slabBlock(slabBlock, blockTexture(block), blockTexture(block));
         stairsBlock(stairsBlock, blockTexture(block));
         wallBlock(wallBlock, blockTexture(block));
+        models().wallInventory(wallBlock.getRegistryName().getPath() + "_inventory", blockTexture(block));
     }
 
     public void barsSet(Block block, DoorBlock doorBlock, PaneBlock fenceBlock, SlabBlock slabBlock, TrapDoorBlock trapdoorBlock) {

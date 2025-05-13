@@ -102,20 +102,20 @@ public class ZFCBlocks {
 
     // BAR SETS
     public static final RegistryObject<Block> HEAVY_DUTY_BARS = registerWithItem("heavy_duty_bars", () -> new GlassBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).requiresCorrectToolForDrops().strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns).isRedstoneConductor(ZFCBlocks::never).isSuffocating(ZFCBlocks::never).isViewBlocking(ZFCBlocks::never)));
-    public static final RegistryObject<DoorBlock> HEAVY_DUTY_BARS_DOOR = registerWithItem("heavy_duty_bars_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion()));
-    public static final RegistryObject<PaneBlock> HEAVY_DUTY_BARS_FENCE = registerWithItem("heavy_duty_bars_fence", () -> new PaneBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
-    public static final RegistryObject<SlabBlock> HEAVY_DUTY_BARS_SLAB = registerWithItem("heavy_duty_bars_slab", () -> new SlabBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
-    public static final RegistryObject<TrapDoorBlock> HEAVY_DUTY_BARS_TRAPDOOR = registerWithItem("heavy_duty_bars_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns)));
+    public static final RegistryObject<DoorBlock> HEAVY_DUTY_DOOR = registerWithItem("heavy_duty_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion()));
+    public static final RegistryObject<PaneBlock> HEAVY_DUTY_FENCE = registerWithItem("heavy_duty_fence", () -> new PaneBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
+    public static final RegistryObject<SlabBlock> HEAVY_DUTY_SLAB = registerWithItem("heavy_duty_slab", () -> new SlabBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
+    public static final RegistryObject<TrapDoorBlock> HEAVY_DUTY_TRAPDOOR = registerWithItem("heavy_duty_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns)));
     public static final RegistryObject<Block> VERTICAL_BARS = registerWithItem("vertical_bars", () -> new GlassBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).requiresCorrectToolForDrops().strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns).isRedstoneConductor(ZFCBlocks::never).isSuffocating(ZFCBlocks::never).isViewBlocking(ZFCBlocks::never)));
     public static final RegistryObject<DoorBlock> VERTICAL_BARS_DOOR = registerWithItem("vertical_bars_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion()));
     public static final RegistryObject<PaneBlock> VERTICAL_BARS_FENCE = registerWithItem("vertical_bars_fence", () -> new PaneBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
     public static final RegistryObject<SlabBlock> VERTICAL_BARS_SLAB = registerWithItem("vertical_bars_slab", () -> new SlabBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
     public static final RegistryObject<TrapDoorBlock> VERTICAL_BARS_TRAPDOOR = registerWithItem("vertical_bars_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns)));
     public static final RegistryObject<Block> CAST_IRON_BARS = registerWithItem("cast_iron_bars", () -> new GlassBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).requiresCorrectToolForDrops().strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns).isRedstoneConductor(ZFCBlocks::never).isSuffocating(ZFCBlocks::never).isViewBlocking(ZFCBlocks::never)));
-    public static final RegistryObject<DoorBlock> CAST_IRON_BARS_DOOR = registerWithItem("cast_iron_bars_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion()));
-    public static final RegistryObject<PaneBlock> CAST_IRON_BARS_FENCE = registerWithItem("cast_iron_bars_fence", () -> new PaneBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
-    public static final RegistryObject<SlabBlock> CAST_IRON_BARS_SLAB = registerWithItem("cast_iron_bars_slab", () -> new SlabBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
-    public static final RegistryObject<TrapDoorBlock> CAST_IRON_BARS_TRAPDOOR = registerWithItem("cast_iron_bars_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns)));
+    public static final RegistryObject<DoorBlock> CAST_IRON_DOOR = registerWithItem("cast_iron_door", () -> new DoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion()));
+    public static final RegistryObject<PaneBlock> CAST_IRON_FENCE = registerWithItem("cast_iron_fence", () -> new PaneBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
+    public static final RegistryObject<SlabBlock> CAST_IRON_SLAB = registerWithItem("cast_iron_slab", () -> new SlabBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(2.0F, 3.0F).sound(SoundType.METAL).noOcclusion()));
+    public static final RegistryObject<TrapDoorBlock> CAST_IRON_TRAPDOOR = registerWithItem("cast_iron_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns)));
 
     // ETC
     public static final RegistryObject<Block> DRAINAGE_PIPE = registerWithItem("drainage_pipe", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)));
@@ -161,21 +161,21 @@ public class ZFCBlocks {
         RenderType cutoutMipped = RenderType.cutoutMipped();
         RenderType cutout = RenderType.cutout();
 
-        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_BARS_FENCE.get(), cutoutMipped);
-        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_BARS_SLAB.get(), cutoutMipped);
+        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_FENCE.get(), cutoutMipped);
+        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_SLAB.get(), cutoutMipped);
         RenderTypeLookup.setRenderLayer(VERTICAL_BARS_FENCE.get(), cutoutMipped);
         RenderTypeLookup.setRenderLayer(VERTICAL_BARS_SLAB.get(), cutoutMipped);
-        RenderTypeLookup.setRenderLayer(CAST_IRON_BARS_FENCE.get(), cutoutMipped);
-        RenderTypeLookup.setRenderLayer(CAST_IRON_BARS_SLAB.get(), cutoutMipped);
+        RenderTypeLookup.setRenderLayer(CAST_IRON_FENCE.get(), cutoutMipped);
+        RenderTypeLookup.setRenderLayer(CAST_IRON_SLAB.get(), cutoutMipped);
 
         RenderTypeLookup.setRenderLayer(HEAVY_DUTY_BARS.get(), cutout);
-        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_BARS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_BARS_TRAPDOOR.get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_DOOR.get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_DUTY_TRAPDOOR.get(), cutout);
         RenderTypeLookup.setRenderLayer(VERTICAL_BARS.get(), cutout);
         RenderTypeLookup.setRenderLayer(VERTICAL_BARS_DOOR.get(), cutout);
         RenderTypeLookup.setRenderLayer(VERTICAL_BARS_TRAPDOOR.get(), cutout);
         RenderTypeLookup.setRenderLayer(CAST_IRON_BARS.get(), cutout);
-        RenderTypeLookup.setRenderLayer(CAST_IRON_BARS_DOOR.get(), cutout);
-        RenderTypeLookup.setRenderLayer(CAST_IRON_BARS_TRAPDOOR.get(), cutout);
+        RenderTypeLookup.setRenderLayer(CAST_IRON_DOOR.get(), cutout);
+        RenderTypeLookup.setRenderLayer(CAST_IRON_TRAPDOOR.get(), cutout);
     }
 }

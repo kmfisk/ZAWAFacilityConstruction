@@ -1,7 +1,7 @@
-package com.github.kmfisk.zawafc;
+package com.github.kmfisk.zfc;
 
-import com.github.kmfisk.zawafc.block.ZFCBlocks;
-import com.github.kmfisk.zawafc.item.ZFCItems;
+import com.github.kmfisk.zfc.block.ZFCBlocks;
+import com.github.kmfisk.zfc.item.ZFCItems;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -9,7 +9,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(ZawaFacilityConstruction.MOD_ID)
 public class ZawaFacilityConstruction {
-    public static final String MOD_ID = "zawafc";
+    public static final String MOD_ID = "zfc";
 
     public ZawaFacilityConstruction() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();

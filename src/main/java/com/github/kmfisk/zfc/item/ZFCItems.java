@@ -1,6 +1,6 @@
-package com.github.kmfisk.zawafc.item;
+package com.github.kmfisk.zfc.item;
 
-import com.github.kmfisk.zawafc.ZawaFacilityConstruction;
+import com.github.kmfisk.zfc.ZawaFacilityConstruction;
 import net.minecraft.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;

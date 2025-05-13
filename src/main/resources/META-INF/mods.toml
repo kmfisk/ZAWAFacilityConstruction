@@ -4,7 +4,7 @@ license="All rights reserved"
 issueTrackerURL="https://github.com/kmfisk/ZAWAFacilityConstruction/issues" #optional
 
 [[mods]] #mandatory
-    modId="zawafc" #mandatory
+    modId="zfc" #mandatory
     version="${file.jarVersion}" #mandatory
     displayName="ZAWA: Facility Construction" #mandatory
     #updateJSONURL="https://change.me.example.invalid/updates.json" #optional
@@ -15,21 +15,21 @@ issueTrackerURL="https://github.com/kmfisk/ZAWAFacilityConstruction/issues" #opt
     description='''
 '''
 
-[[dependencies.zawafc]] #optional
+[[dependencies.zfc]] #optional
     modId="forge" #mandatory
     mandatory=true #mandatory
     versionRange="[36.2.20,)" #mandatory
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.zawafc]]
+[[dependencies.zfc]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5,1.17)"
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.zawafc]]
+[[dependencies.zfc]]
     modId="zawa"
     mandatory=true
     versionRange="[1.16.5-1.0.2-BeefBeta-TropicalExpedition3,)"

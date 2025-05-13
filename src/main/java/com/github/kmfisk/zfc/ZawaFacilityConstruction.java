@@ -16,8 +16,10 @@ public class ZawaFacilityConstruction {
 
     public ZawaFacilityConstruction() {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
         ZFCItems.REGISTRAR.register(bus);
         ZFCBlocks.REGISTRAR.register(bus);
+
         bus.addListener(this::gatherData);
         bus.addListener(this::setupClient);
     }

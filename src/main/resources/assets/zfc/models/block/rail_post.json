@@ -1,0 +1,23 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "domestic decor/backup textures/blocks/acacia_planks",
+		"particle": "domestic decor/backup textures/blocks/acacia_planks"
+	},
+	"elements": [
+		{
+			"name": "post",
+			"from": [6, 0, 6],
+			"to": [10, 2, 10],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4, 2], "texture": "#0"},
+				"east": {"uv": [4, 7, 8, 9], "texture": "#0"},
+				"south": {"uv": [7, 7, 11, 9], "texture": "#0"},
+				"west": {"uv": [7, 7, 11, 9], "texture": "#0"},
+				"up": {"uv": [6, 6, 10, 10], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [4, 7, 8, 11], "rotation": 270, "texture": "#0"}
+			}
+		}
+	]
+}

@@ -35,19 +35,19 @@ public class ZFCBlocks {
 //    public static final RegistryObject<Block> STEEL_WIRE_SHELF = registerWithItem("steel_wire_shelf", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)));
 
     // FENCES
-    public static final Map<String, RegistryObject<Block>> FINE_CABLE_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> FINE_CABLE_FENCE_GATES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> STRIPPED_FINE_CABLE_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> STRIPPED_FINE_CABLE_FENCE_GATES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> BRANCH_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> BRANCH_FENCE_GATES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> BALCONY_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> BALCONY_FENCE_GATES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> HEAVY_STOCK_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> HEAVY_STOCK_FENCE_GATES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> MINIMALISTIC_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> WOOD_BARRIER_FENCES = new HashMap<>();
-    public static final Map<String, RegistryObject<Block>> WOOD_BARRIER_FENCE_GATES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceBlock>> BALCONY_FENCES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceGateBlock>> BALCONY_FENCE_GATES = new HashMap<>();
+//    public static final Map<String, RegistryObject<ZawaFenceBlock>> BARRIER_FENCES = new HashMap<>();
+//    public static final Map<String, RegistryObject<ZawaFenceGateBlock>> BARRIER_FENCE_GATES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceBlock>> BRANCH_FENCES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceGateBlock>> BRANCH_FENCE_GATES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceBlock>> FINE_CABLE_FENCES = new HashMap<>();
+//    public static final Map<String, RegistryObject<ZawaFenceGateBlock>> FINE_CABLE_FENCE_GATES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceBlock>> HEAVY_STOCK_FENCES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceGateBlock>> HEAVY_STOCK_FENCE_GATES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceBlock>> MINIMALISTIC_FENCES = new HashMap<>();
+    public static final Map<String, RegistryObject<ZawaFenceBlock>> STRIPPED_FINE_CABLE_FENCES = new HashMap<>();
+//    public static final Map<String, RegistryObject<ZawaFenceGateBlock>> STRIPPED_FINE_CABLE_FENCE_GATES = new HashMap<>();
 
     // RAILS
     public static final Map<String, RegistryObject<Block>> WOOD_RAILS = new HashMap<>();
@@ -118,14 +118,14 @@ public class ZFCBlocks {
     public static final RegistryObject<TrapDoorBlock> CAST_IRON_TRAPDOOR = registerWithItem("cast_iron_trapdoor", () -> new TrapDoorBlock(AbstractBlock.Properties.of(Material.HEAVY_METAL).strength(3.0F).sound(SoundType.METAL).noOcclusion().isValidSpawn(ZFCBlocks::neverSpawns)));
 
     // ETC
-    public static final RegistryObject<Block> DRAINAGE_PIPE = registerWithItem("drainage_pipe", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)));
+//    public static final RegistryObject<Block> DRAINAGE_PIPE = registerWithItem("drainage_pipe", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE)));
 
     static {
         for (String type : new String[]{"acacia", /*"bamboo",*/ "birch", /*"cherry",*/ "dark_oak", "jungle", /*"mangrove",*/ "oak", "spruce", "crimson", "warped"}) {
             FINE_CABLE_FENCES.put(type, registerWithItem(type + "_fine_cable_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
-            FINE_CABLE_FENCE_GATES.put(type, registerWithItem(type + "_fine_cable_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
+//            FINE_CABLE_FENCE_GATES.put(type, registerWithItem(type + "_fine_cable_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
             STRIPPED_FINE_CABLE_FENCES.put(type, registerWithItem("stripped_" + type + "_fine_cable_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
-            STRIPPED_FINE_CABLE_FENCE_GATES.put(type, registerWithItem("stripped_" + type + "_fine_cable_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
+//            STRIPPED_FINE_CABLE_FENCE_GATES.put(type, registerWithItem("stripped_" + type + "_fine_cable_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
             BRANCH_FENCES.put(type, registerWithItem(type + "_branch_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
             BRANCH_FENCE_GATES.put(type, registerWithItem(type + "_branch_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
             BALCONY_FENCES.put(type, registerWithItem(type + "_balcony_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
@@ -133,13 +133,13 @@ public class ZFCBlocks {
             HEAVY_STOCK_FENCES.put(type, registerWithItem(type + "_heavy_stock_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
             HEAVY_STOCK_FENCE_GATES.put(type, registerWithItem(type + "_heavy_stock_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
             MINIMALISTIC_FENCES.put(type, registerWithItem(type + "_minimalistic_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
-            WOOD_BARRIER_FENCES.put(type, registerWithItem(type + "_barrier_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
-            WOOD_BARRIER_FENCE_GATES.put(type, registerWithItem(type + "_barrier_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
-            WOOD_RAILS.put(type, registerWithItem(type + "_wood_rail", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE))));
+//            BARRIER_FENCES.put(type, registerWithItem(type + "_barrier_fence", () -> new ZawaFenceBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
+//            BARRIER_FENCE_GATES.put(type, registerWithItem(type + "_barrier_fence_gate", () -> new ZawaFenceGateBlock(AbstractBlock.Properties.of(Material.WOOD).strength(2.0F, 3.0F).harvestTool(ToolType.AXE).sound(SoundType.WOOD))));
+            WOOD_RAILS.put(type, registerWithItem(type + "_rail", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE))));
         }
 
-        for (String type : new String[]{"andesite", "cobblestone", "diorite", "granite", "sandstone", "stone", "stone_brick"}) {
-            STONE_RAILS.put(type, registerWithItem(type + "_stone_rail", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE))));
+        for (String type : new String[]{"andesite", "brick", "cobblestone", "diorite", "granite", "sandstone", "stone", "stone_brick"}) {
+            STONE_RAILS.put(type, registerWithItem(type + "_rail", () -> new Block(AbstractBlock.Properties.of(Material.STONE).strength(2.0F, 3.0F).harvestTool(ToolType.PICKAXE).sound(SoundType.STONE))));
         }
     }
 
@@ -168,6 +168,38 @@ public class ZFCBlocks {
         RenderTypeLookup.setRenderLayer(CAST_IRON_FENCE.get(), cutoutMipped);
         RenderTypeLookup.setRenderLayer(CAST_IRON_SLAB.get(), cutoutMipped);
 
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("acacia").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("acacia").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("birch").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("birch").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("dark_oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("dark_oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("jungle").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("jungle").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("spruce").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("spruce").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("crimson").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("crimson").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCES.get("warped").get(), cutout);
+        RenderTypeLookup.setRenderLayer(BRANCH_FENCE_GATES.get("warped").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("acacia").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("acacia").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("birch").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("birch").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("dark_oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("dark_oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("jungle").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("jungle").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("oak").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("spruce").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("spruce").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("crimson").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("crimson").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCES.get("warped").get(), cutout);
+        RenderTypeLookup.setRenderLayer(HEAVY_STOCK_FENCE_GATES.get("warped").get(), cutout);
         RenderTypeLookup.setRenderLayer(HEAVY_DUTY_BARS.get(), cutout);
         RenderTypeLookup.setRenderLayer(HEAVY_DUTY_DOOR.get(), cutout);
         RenderTypeLookup.setRenderLayer(HEAVY_DUTY_TRAPDOOR.get(), cutout);

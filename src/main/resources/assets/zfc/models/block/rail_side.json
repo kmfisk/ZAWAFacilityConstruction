@@ -1,0 +1,52 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "domestic decor/backup textures/blocks/acacia_planks",
+		"1": "domestic decor/backup textures/blocks/gray_concrete",
+		"particle": "domestic decor/backup textures/blocks/acacia_planks"
+	},
+	"elements": [
+		{
+			"name": "side",
+			"from": [7.275, 1.95, 7.25],
+			"to": [8.725, 4.45, 8.7],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 1.45, 2.5], "texture": "#1"},
+				"east": {"uv": [0, 0, 1.45, 2.5], "texture": "#1"},
+				"south": {"uv": [0, 0, 1.45, 2.5], "texture": "#1"},
+				"west": {"uv": [0, 0, 1.45, 2.5], "texture": "#1"},
+				"up": {"uv": [0, 0, 1.45, 1.45], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 1.45, 1.45], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"name": "side",
+			"from": [6.025, 0.001, 0],
+			"to": [9.975, 1.991, 7.96],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [6, 14.01, 9.95, 16], "texture": "#0"},
+				"east": {"uv": [8, 7, 16, 8.99], "texture": "#0"},
+				"south": {"uv": [0, 0, 3.95, 1.99], "texture": "#missing"},
+				"west": {"uv": [0, 7, 8, 8.99], "texture": "#0"},
+				"up": {"uv": [0, 6, 8, 9.95], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [8, 7, 16, 10.95], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"name": "side",
+			"from": [7.25, 3, 0],
+			"to": [8.75, 4.5, 8.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 1.5, 1.5], "texture": "#1"},
+				"east": {"uv": [0, 0, 8.75, 1.5], "texture": "#1"},
+				"south": {"uv": [0, 0, 1.5, 1.5], "texture": "#1"},
+				"west": {"uv": [0, 0, 8.75, 1.5], "texture": "#1"},
+				"up": {"uv": [0, 0, 8.75, 1.5], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [0, 0, 8.75, 1.5], "rotation": 270, "texture": "#1"}
+			}
+		}
+	]
+}
